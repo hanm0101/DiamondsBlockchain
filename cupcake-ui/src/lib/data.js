@@ -3,25 +3,25 @@ const sampleAccount = {
   data: {
     attributes: {
       'account-type': 'individual',
-      'admin-email': 'peter.wiggen@example.com',
+      'admin-email': 'MyaliM@gmail.com',
       contact: {
-        email: 'LindseyMiz@gmail.com',
+        email: 'MyaliM@gmail.com',
         phone: '555-555-5323',
-        'last-name': 'Miz',
-        'first-name': 'Lindsey',
+        'last-name': 'M',
+        'first-name': 'Myali',
         address: {
-          city: 'Toronto',
-          'postal-code': 'N4N2L1',
-          'province-region': 'Ontario',
-          'street-address-1': '925 Madison Avenue',
-          country: 'CA',
+          city: 'Washington',
+          'postal-code': 'N4N3L1',
+          'province-region': 'Washington',
+          'street-address-1': '123 Madison Avenue',
+          country: 'WA',
         },
       },
     },
   },
 };
 
-const sampleCupcake = {
+const sampleDiamond = {
   flavour: 'chocolate',
   icing: 'chocolate',
   sprinkles: {
@@ -36,5 +36,5 @@ const sampleCupcake = {
 
 module.exports = {
   sampleAccount,
-  sampleCupcake,
+  sampleDiamond,
 };

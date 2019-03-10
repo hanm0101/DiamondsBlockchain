@@ -26,6 +26,10 @@
   top: 38px;
 }
 
+.info {
+  align-items: left;
+}
+
 .App-link {
   color: #61dafb;
 }

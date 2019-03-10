@@ -1,20 +1,20 @@
 import classnames from 'classnames';
 import React from 'react';
 
-import '../shared/styles/CupcakeTransfer.css';
+import '../shared/styles/DiamondTransfer.css';
 
 import AccountSelector from './AccountSelector';
 
 const AccountPanel = ({
-  account, cupcakes, onSelect, onLoad, selected,
+  account, diamonds, onSelect, onLoad, selected,
 }) => (
   <div>
     <AccountSelector account={account} onLoad={onLoad} />
     <div>
-      {cupcakes.map((c) => {
+      {diamonds.map((c) => {
         console.log(c);
-        const className = classnames('cupcake-row', {
-          // "cupcake-row-selected": c.id == (selected && selected.id),
+        const className = classnames('diamond-row', {
+          // "diamond-row-selected": c.id == (selected && selected.id),
         });
 
         return (

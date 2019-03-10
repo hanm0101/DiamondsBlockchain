@@ -1,7 +1,7 @@
 // Cupcake descriptors and constructor
 /*
  * Returns the specification for a candle.
- * colour : a string describing the colour of the cupcake
+ * colour : a string describing the colour of the diamond
  * isIgnited : a boolean specifying whether the candle has been lit or not
  */
 function createCandle(colour, isIgnited) {

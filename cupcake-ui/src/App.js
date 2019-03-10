@@ -1,55 +1,55 @@
 import React, { Component } from 'react';
 import './shared/styles/App.css';
 
-import { cupcakeBase } from './shared/constants/constants';
+import { diamondBase } from './shared/constants/constants';
 
-import Bakery from './components/Bakery';
-import CupcakeTransfer from './components/CupcakeTransfer';
+import Shiny from './components/Shiny';
+import DiamondTransfer from './components/DiamondTransfer';
 
 class App extends Component {
   state = {
-    cupcake: cupcakeBase,
+    diamond: diamondBase,
     left: {
-      account: '', // FIXME
-      cupcakes: [],
+      account: '"b658daae-6d9b-48d7-9ac5-32bf978d7a03', // FIXME
+      diamonds: [],
     },
     right: {
-      account: '', // FIXME
-      cupcakes: [],
+      account: 'ca643418-a51c-4e03-82eb-bc0bf68bf2d1', // FIXME
+      diamonds: [],
     },
   };
 
-  onBake = (cupcake) => {
-    console.log('Baking Cupcake', cupcake);
+  onConfirm = (diamond) => {
+    console.log('Baking diamond', diamond);
   };
 
-  onTransfer = (fromAccount, toAccount, cupcake) => {
-    // console.log("Transfer Cupcake", fromAccount, toAccount, cupcake);
+  onTransfer = (fromAccount, toAccount, diamond) => {
+    console.log("Transfer diamond", fromAccount, toAccount, diamond);
   };
 
-  onSelected = (cupcake) => {
-    console.log('Selected', cupcake);
+  onSelected = (diamond) => {
+    console.log('Selected', diamond);
 
     this.setState({
-      cupcake,
+      diamond,
     });
   };
 
   render() {
-    const { left, right, cupcake } = this.state;
+    const { left, right, diamond } = this.state;
 
     return (
       <div className="container">
-        <h1>Cupcakes.OT</h1>
+        <h1>Diamonds</h1>
 
-        <CupcakeTransfer
+        <DiamondTransfer
           left={left}
           right={right}
           onTransfer={this.onTransfer}
-          onCupcakeSelect={this.onSelected}
+          onDiamondSelect={this.onSelected}
         />
 
-        <Bakery cupcake={cupcake} onBake={this.onBake} onChange={this.onSelected} />
+        <Shiny diamond={diamond} onConfirm={this.onConfirm} onChange={this.onSelected} />
       </div>
     );
   }

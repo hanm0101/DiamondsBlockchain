@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactSVG from 'react-svg';
 
-import '../shared/styles/Cupcake.css';
-import cupcakeSvg from '../shared/svg/cupcake.svg';
+import '../shared/styles/Diamond.css';
+import cupcakeSvg from '../shared/svg/download_1_.svg';
 
 function setCss(element, selector, style, value) {
   element.querySelectorAll(selector).forEach((e) => {
@@ -10,7 +10,7 @@ function setCss(element, selector, style, value) {
   });
 }
 
-class Cupcake extends Component {
+class Diamond extends Component {
   onInjected = (
     {
       icingColour,
@@ -29,7 +29,7 @@ class Cupcake extends Component {
 
     // Filling
     setCss(element, "#Base > linearGradient stop[offset='0']", 'stopColor', flavourColour);
-    setCss(element, "#Base > linearGradient stop[offset='1']", 'stopColor', flavourColour);
+    //setCss(element, "#Base > linearGradient stop[offset='1']", 'stopColor', flavourColour);
 
     // Paper
     setCss(element, "#Base g linearGradient stop[offset='0']", 'stopColor', paperColour);
@@ -69,4 +69,4 @@ class Cupcake extends Component {
   }
 }
 
-export default Cupcake;
+export default Diamond;

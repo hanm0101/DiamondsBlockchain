@@ -10,8 +10,8 @@
     "dotenv": "^6.2.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "^2.1.5",
-    "react-svg": "^7.2.6",
+    "react-scripts": "^2.1.8",
+    "react-svg": "^7.2.9",
     "request-promise": "^4.2.2"
   },
   "scripts": {
@@ -35,6 +35,6 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.4.0"
+    "eslint-plugin-react-hooks": "^1.5.0"
   }
 }

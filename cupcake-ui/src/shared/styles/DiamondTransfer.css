@@ -1,8 +1,8 @@
-.cupcake-row {
+.diamond-row {
     padding: 10px;
 }
 
-.cupcake-row:hover, .cupcake-row-selected {
+.diamond-row:hover, .diamond-row-selected {
     background-color: lightgrey;
     cursor: pointer;
 }
